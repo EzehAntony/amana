@@ -1,8 +1,12 @@
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Inter, Nosifer } from "@next/font/google";
 import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const nosifer = Nosifer({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
@@ -37,7 +41,7 @@ export default function Home() {
 
       <div className={styles.services}>
         <span className={inter.className}>Our services</span>
-        <p className={inter.className}>what we do </p>
+        <p className={inter.className}>what we do</p>
 
         <div className={styles.servicesContainer}>
           <div>
@@ -81,11 +85,61 @@ export default function Home() {
       <div className={styles.testimonials}>
         <span className={styles.className}>testimonials</span>
         <h2 className={styles.className}>Our client world</h2>
+        <div className={styles.cardWrap}>
+          <div className={styles.card}>
+            <div className={styles.stars}>
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+            </div>
 
-        <div className={styles.cardWrapper}>
-          <div className={styles.card}></div>
+            <div className={styles.teshead}>
+              <div className={styles.box}></div>
+              <div className={styles.text}>
+                <h3 className={inter.className}>Ezeh Anthony</h3>
+                <p className={inter.className}>Frontend developer</p>
+              </div>
+              <img src="/quote.png" alt="" />
+            </div>
+
+            <p className={inter.className}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              quam possimus, exercitationem dolore itaque quo. Quae obcaecati
+              quidem vel enim ducimus molestias optio quis! Id numquam harum
+              nobis rem asperiores!
+            </p>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.stars}>
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+              <img src="/star.png" alt="" />
+            </div>
+
+            <div className={styles.teshead}>
+              <div className={styles.box}></div>
+              <div className={styles.text}>
+                <h3 className={inter.className}>John Doe</h3>
+                <p className={inter.className}>Ai</p>
+              </div>
+              <img src="/quote.png" alt="" />
+            </div>
+
+            <p className={inter.className}>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              quam possimus, exercitationem dolore itaque quo. Quae obcaecati
+              quidem vel enim ducimus molestias optio quis! Id numquam harum
+              nobis rem asperiores!
+            </p>
+          </div>
         </div>
       </div>
+
+      <footer className={nosifer.className}>Anthony's piece</footer>
     </main>
   );
 }

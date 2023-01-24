@@ -200,7 +200,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  padding: 20px 5%;
 }
 
 .testimonials span {
@@ -209,8 +209,9 @@
   margin-bottom: 10px;
 }
 
-.cardWrapper {
-  width: 100;
+.cardWrap {
+  width: 100%;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,13 +219,77 @@
 
 .card {
   background-color: white;
-  height: 200px;
-  width: 30%;
+  width: 33%;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px 0 10px 0;
+  margin: 0 10px;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 15px;
+  margin: 0 5px;
+}
+
+.teshead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.teshead .box {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #004643;
+}
+
+.teshead .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.teshead .text h3 {
+  color: black;
+  font-size: 15px;
+}
+
+.text p {
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.testimonials p {
+  color: black;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.main footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #004643;
+  font-weight: 600;
 }
 
 @media (max-width: 800px) {
   .hero {
     height: 400px;
+  }
+
+  .people img {
+    width: 90%;
   }
 
   .hero header {
@@ -243,6 +308,16 @@
   .hero h1 {
     font-size: 30px;
     max-width: 400px;
+  }
+
+  .hero .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .buttonContainer img {
+    width: 40px;
   }
 
   .services > p {
@@ -283,6 +358,7 @@
     max-height: 400px;
     object-fit: cover;
     object-position: top;
+    border-radius: 20px 0 20px 0;
   }
 
   .offer .right {
@@ -301,5 +377,15 @@
   .offer .right p {
     font-size: 15px;
     font-weight: 400;
+  }
+
+  .testimonials .cardWrap {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .testimonials .card {
+    width: 100%;
+    margin: 20px 0;
   }
 }
