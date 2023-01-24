@@ -209,6 +209,11 @@
   margin-bottom: 10px;
 }
 
+.testimonials h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
 .cardWrap {
   width: 100%;
   min-height: 300px;
@@ -262,13 +267,15 @@
 }
 
 .text p {
+  text-align: left;
   font-size: 12px;
   font-weight: 600;
   color: gray;
   text-transform: capitalize;
 }
 
-.testimonials p {
+.testimonials h4 {
+  font-weight: 500;
   color: black;
   padding: 10px;
   font-size: 13px;

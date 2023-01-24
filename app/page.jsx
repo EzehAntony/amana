@@ -84,7 +84,7 @@ export default function Home() {
 
       <div className={styles.testimonials}>
         <span className={styles.className}>testimonials</span>
-        <h2 className={styles.className}>Our client world</h2>
+        <h2 className={inter.className}>Our client world</h2>
         <div className={styles.cardWrap}>
           <div className={styles.card}>
             <div className={styles.stars}>
@@ -104,12 +104,12 @@ export default function Home() {
               <img src="/quote.png" alt="" />
             </div>
 
-            <p className={inter.className}>
+            <h4 className={inter.className}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
               quam possimus, exercitationem dolore itaque quo. Quae obcaecati
               quidem vel enim ducimus molestias optio quis! Id numquam harum
               nobis rem asperiores!
-            </p>
+            </h4>
           </div>
           <div className={styles.card}>
             <div className={styles.stars}>
@@ -129,12 +129,12 @@ export default function Home() {
               <img src="/quote.png" alt="" />
             </div>
 
-            <p className={inter.className}>
+            <h4 className={inter.className}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
               quam possimus, exercitationem dolore itaque quo. Quae obcaecati
               quidem vel enim ducimus molestias optio quis! Id numquam harum
               nobis rem asperiores!
-            </p>
+            </h4>
           </div>
         </div>
       </div>
