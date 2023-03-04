@@ -3,6 +3,10 @@
   color: white;
 }
 
+.main *{
+  visibility: hidden;
+}
+
 .hero {
   background-color: #004643;
   position: relative;
@@ -12,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .hero header {
