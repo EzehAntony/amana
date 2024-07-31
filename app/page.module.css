@@ -3,7 +3,7 @@
   color: white;
 }
 
-.main *{
+.main * {
   visibility: hidden;
 }
 
@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .hero header {
@@ -100,6 +99,7 @@
   width: 80%;
   margin-top: -80px;
   z-index: 1;
+  border-radius: 15px;
 }
 
 .services {
@@ -131,6 +131,8 @@
 }
 .servicesContainer div {
   height: 200px;
+  max-width: 500px;
+
   width: 30%;
   display: flex;
   flex-direction: column;
